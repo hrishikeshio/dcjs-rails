@@ -18,6 +18,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency "railties", ">= 3.0", "< 5.0"
-  gem.add_dependency 'crossfilter-rails'
   gem.add_dependency 'd3-rails'
+  gem.add_dependency 'crossfilter-rails'
 end
