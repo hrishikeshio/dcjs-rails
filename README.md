@@ -10,6 +10,8 @@
 Add the following to your gemfile:
 
     gem 'dcjs-rails'
+    gem 'd3-rails'
+    gem 'crossfilter-rails'
 
 And then execute:
 
@@ -19,7 +21,7 @@ Add the following directives to your JavaScript manifest file (application.js):
 
     //= require d3
     //= require crossfilter
-    //= require dcjs
+    //= require dc
 
 ## Contributing
 
