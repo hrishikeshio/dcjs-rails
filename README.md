@@ -1,22 +1,25 @@
-# crossfilter-rails
+# dcjs-rails
 
-**Crossfilter** is a JavaScript library for exploring large multivariate datasets in the browser. Crossfilter supports extremely fast (<30ms) interaction with coordinated views, even with datasets containing a million or more records; we built it to power analytics for Square Register, allowing merchants to slice and dice their payment history fluidly.
+**dc.js** is a javascript charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3 engine to render charts in css friendly svg format. Charts rendered using dc.js are naturally data driven and reactive therefore providing instant feedback on user's interaction. The main objective of this project is to provide an easy yet powerful javascript library which can be utilized to perform data visualization and analysis in browser as well as on mobile device. For more information please check out our Wiki and API Reference. For your questions and answers please try dc.js user group.
 
-Since most interactions only involve a single dimension, and then only small adjustments are made to the filter values, incremental filtering and reducing is significantly faster than starting from scratch. Crossfilter uses sorted indexes (and a few bit-twiddling hacks) to make this possible, dramatically increasing the perfor­mance of live histograms and top-K lists. Crossfilter is available under the [Apache License](/square/crossfilter/blob/master/LICENSE).
+. Crossfilter is available under the [Apache License](/square/crossfilter/blob/master/LICENSE).
+. dc.js is available under the [Apache License](/NickQiZhu/dc.js/blob/master/LICENSE).
 
 ## Installation
 
 Add the following to your gemfile:
 
-    gem 'crossfilter-rails'
+    gem 'dcjs-rails'
 
 And then execute:
 
     $ bundle
 
-Add the following directive to your JavaScript manifest file (application.js):
+Add the following directives to your JavaScript manifest file (application.js):
 
+    //= require d3
     //= require crossfilter
+    //= require dcjs
 
 ## Contributing
 
