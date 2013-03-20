@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["hrishikesh911@gmail.com"]
   gem.description   = %q{Multi-Dimensional charting built to work natively with crossfilter rendered with d3.js}
   gem.summary       = %q{Gemified dc.js asset for Rails}
-  gem.homepage      = "http://github.com/bai/crossfilter-rails"
+  gem.homepage      = "https://github.com/hrishikeshio/dcjs-rails"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
