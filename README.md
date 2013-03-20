@@ -1,9 +1,9 @@
 # dcjs-rails
 
-**dc.js** is a javascript charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3 engine to render charts in css friendly svg format. Charts rendered using dc.js are naturally data driven and reactive therefore providing instant feedback on user's interaction. The main objective of this project is to provide an easy yet powerful javascript library which can be utilized to perform data visualization and analysis in browser as well as on mobile device. For more information please check out our Wiki and API Reference. For your questions and answers please try dc.js user group.
+**<a href="https://github.com/NickQiZhu/dc.js">dc.js</a>** is a javascript charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3 engine to render charts in css friendly svg format. Charts rendered using dc.js are naturally data driven and reactive therefore providing instant feedback on user's interaction. The main objective of this project is to provide an easy yet powerful javascript library which can be utilized to perform data visualization and analysis in browser as well as on mobile device. For more information please check out our Wiki and API Reference. For your questions and answers please try dc.js user group.
 
-. Crossfilter is available under the [Apache License](/square/crossfilter/blob/master/LICENSE).
-. dc.js is available under the [Apache License](/NickQiZhu/dc.js/blob/master/LICENSE).
+. Crossfilter is available under the [Apache License]. <br/>
+. dc.js is available under the [Apache License]. <br/>
 
 ## Installation
 
