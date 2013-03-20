@@ -2,13 +2,8 @@
 
 **<a href="https://github.com/NickQiZhu/dc.js">dc.js</a>** is a javascript charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3 engine to render charts in css friendly svg format. Charts rendered using dc.js are naturally data driven and reactive therefore providing instant feedback on user's interaction. The main objective of this project is to provide an easy yet powerful javascript library which can be utilized to perform data visualization and analysis in browser as well as on mobile device. For more information please check out our Wiki and API Reference. For your questions and answers please try dc.js user group.
 
-<<<<<<< HEAD
-. Crossfilter is available under the [Apache License].
-. dc.js is available under the [Apache License].
-=======
 . Crossfilter is available under the [Apache License]. <br/>
 . dc.js is available under the [Apache License]. <br/>
->>>>>>> 744f7ca9624b68552b472fac7fed3abeb32e3cc4
 
 ## Installation
 
