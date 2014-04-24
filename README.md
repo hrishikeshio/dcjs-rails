@@ -23,6 +23,10 @@ Add the following directives to your JavaScript manifest file (application.js):
     //= require crossfilter
     //= require dc
 
+Add the following directives to your StyleSheet manifest file (application.css):
+
+    *= require dc
+
 ## Contributing
 
 1. Fork it
