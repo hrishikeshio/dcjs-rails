@@ -1,6 +1,6 @@
 /*!
- *  dc 1.6.0
- *  http://nickqizhu.github.io/dc.js/
+ *  dc 1.7.3
+ *  http://dc-js.github.io/dc.js/
  *  Copyright 2012 Nick Zhu and other contributors
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,11 @@
  *  limitations under the License.
  */
 
-dc = (function(){
+(function() { function _dc(d3, crossfilter) {
 'use strict';
 
 /**
-#### Version 1.6.0
+#### Version 1.7.3
 
 The entire dc.js library is scoped under **dc** name space. It does not introduce anything else into the global
 name space.
@@ -57,7 +57,7 @@ The API references will highlight the fact if a particular function is not chain
 
 **/
 var dc = {
-    version: "1.6.0",
+    version: "1.7.3",
     constants: {
         CHART_CLASS: "dc-chart",
         DEBUG_GROUP_CLASS: "debug",
@@ -5397,4 +5397,24 @@ dc.numberDisplay = function (parent, chartGroup) {
 };
 
 
-return dc;})();
+
+return dc;}
+    if(typeof define === "function" && define.amd) {
+        define(["d3", "crossfilter"], _dc);
+    } else if(typeof module === "object" && module.exports) {
+        var _d3 = require('d3');
+        var _crossfilter = require('crossfilter');
+        // When using npm + browserify, 'crossfilter' is a function,
+        // since package.json specifies index.js as main function, and it
+        // does special handling. When using bower + browserify,
+        // there's no main in bower.json (in fact, there's no bower.json),
+        // so we need to fix it.
+        if (typeof _crossfilter !== "function") {
+            _crossfilter = _crossfilter.crossfilter;
+        }
+        module.exports = _dc(_d3, _crossfilter);
+    } else {
+        this.dc = _dc(d3, crossfilter);
+    }
+}
+)();
